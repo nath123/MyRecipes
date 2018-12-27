@@ -7,21 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB28004821D3C5FE00DD535B /* CustomColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB28004721D3C5FE00DD535B /* CustomColor.swift */; };
+		CB28004B21D3C83200DD535B /* LoginSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB28004A21D3C83200DD535B /* LoginSignUpViewController.swift */; };
 		CB73FFD021D3C16000DF5FB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB73FFCF21D3C16000DF5FB9 /* AppDelegate.swift */; };
-		CB73FFD221D3C16000DF5FB9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB73FFD121D3C16000DF5FB9 /* ViewController.swift */; };
 		CB73FFD521D3C16000DF5FB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB73FFD321D3C16000DF5FB9 /* Main.storyboard */; };
 		CB73FFD721D3C16600DF5FB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB73FFD621D3C16600DF5FB9 /* Assets.xcassets */; };
 		CB73FFDA21D3C16600DF5FB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB73FFD821D3C16600DF5FB9 /* LaunchScreen.storyboard */; };
+		CB73FFE221D3C36500DF5FB9 /* Chameleon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB73FFE121D3C36500DF5FB9 /* Chameleon.framework */; };
+		CB73FFE321D3C36500DF5FB9 /* Chameleon.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CB73FFE121D3C36500DF5FB9 /* Chameleon.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CB988B7921D4D1ED00D500DB /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB988B7821D4D1ED00D500DB /* CustomButton.swift */; };
+		CB988B7B21D4D60800D500DB /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB988B7A21D4D60800D500DB /* CustomLabel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		CB73FFE421D3C36500DF5FB9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CB73FFE321D3C36500DF5FB9 /* Chameleon.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		CB28004721D3C5FE00DD535B /* CustomColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColor.swift; sourceTree = "<group>"; };
+		CB28004A21D3C83200DD535B /* LoginSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginSignUpViewController.swift; sourceTree = "<group>"; };
 		CB73FFCC21D3C16000DF5FB9 /* MyRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB73FFCF21D3C16000DF5FB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CB73FFD121D3C16000DF5FB9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CB73FFD421D3C16000DF5FB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB73FFD621D3C16600DF5FB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB73FFD921D3C16600DF5FB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CB73FFDB21D3C16600DF5FB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB73FFE121D3C36500DF5FB9 /* Chameleon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Chameleon.framework; path = Carthage/Build/iOS/Chameleon.framework; sourceTree = "<group>"; };
+		CB988B7821D4D1ED00D500DB /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		CB988B7A21D4D60800D500DB /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +52,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB73FFE221D3C36500DF5FB9 /* Chameleon.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB28004621D3C5CE00DD535B /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				CB28004721D3C5FE00DD535B /* CustomColor.swift */,
+				CB988B7821D4D1ED00D500DB /* CustomButton.swift */,
+				CB988B7A21D4D60800D500DB /* CustomLabel.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		CB28004921D3C7F400DD535B /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CB28004A21D3C83200DD535B /* LoginSignUpViewController.swift */,
+			);
+			path = "View Controller";
+			sourceTree = "<group>";
+		};
 		CB73FFC321D3C16000DF5FB9 = {
 			isa = PBXGroup;
 			children = (
 				CB73FFCE21D3C16000DF5FB9 /* MyRecipes */,
 				CB73FFCD21D3C16000DF5FB9 /* Products */,
+				CB73FFE121D3C36500DF5FB9 /* Chameleon.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,11 +97,12 @@
 		CB73FFCE21D3C16000DF5FB9 /* MyRecipes */ = {
 			isa = PBXGroup;
 			children = (
+				CB28004921D3C7F400DD535B /* View Controller */,
+				CB28004621D3C5CE00DD535B /* Custom */,
 				CB73FFCF21D3C16000DF5FB9 /* AppDelegate.swift */,
-				CB73FFD121D3C16000DF5FB9 /* ViewController.swift */,
 				CB73FFD321D3C16000DF5FB9 /* Main.storyboard */,
-				CB73FFD621D3C16600DF5FB9 /* Assets.xcassets */,
 				CB73FFD821D3C16600DF5FB9 /* LaunchScreen.storyboard */,
+				CB73FFD621D3C16600DF5FB9 /* Assets.xcassets */,
 				CB73FFDB21D3C16600DF5FB9 /* Info.plist */,
 			);
 			path = MyRecipes;
@@ -74,6 +118,7 @@
 				CB73FFC821D3C16000DF5FB9 /* Sources */,
 				CB73FFC921D3C16000DF5FB9 /* Frameworks */,
 				CB73FFCA21D3C16000DF5FB9 /* Resources */,
+				CB73FFE421D3C36500DF5FB9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,8 +180,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB73FFD221D3C16000DF5FB9 /* ViewController.swift in Sources */,
+				CB988B7921D4D1ED00D500DB /* CustomButton.swift in Sources */,
+				CB988B7B21D4D60800D500DB /* CustomLabel.swift in Sources */,
 				CB73FFD021D3C16000DF5FB9 /* AppDelegate.swift in Sources */,
+				CB28004B21D3C83200DD535B /* LoginSignUpViewController.swift in Sources */,
+				CB28004821D3C5FE00DD535B /* CustomColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +331,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MyRecipes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +352,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = MyRecipes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
